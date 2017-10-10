@@ -1,0 +1,16 @@
+uuid: e0470930-9f46-4a37-8345-a2ee3ece0a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.instagram
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: media.instagram
+target_entity_type_id: media
+target_bundle: instagram
+default_langcode: site_default
+language_alterable: false

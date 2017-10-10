@@ -1,0 +1,20 @@
+uuid: b8615a9f-53bf-4adf-b887-34698b81846b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.video
+id: media.video.name
+field_name: name
+entity_type: media
+bundle: video
+label: 'Media name'
+description: 'The name of this media.'
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

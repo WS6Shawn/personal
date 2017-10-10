@@ -1,0 +1,8 @@
+uuid: d792b2af-d6d9-430a-941f-25b4ab1265c4
+langcode: en
+status: true
+dependencies: {  }
+id: multilingual-nav
+label: 'multilingual nav'
+description: 'Navigation that is translated'
+locked: false

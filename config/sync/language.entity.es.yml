@@ -1,0 +1,9 @@
+uuid: fac930ac-9a57-40db-a75d-670e9a5d3da6
+langcode: en
+status: true
+dependencies: {  }
+id: es
+label: Spanish
+direction: ltr
+weight: 1
+locked: false
