@@ -1,0 +1,22 @@
+uuid: 7435c52d-9bb2-4f11-88b0-9d719671ecfb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: channel_pattern_for_basic_pages
+label: 'Channel pattern for Basic pages'
+type: 'canonical_entities:node'
+pattern: '[node:field_channel:entity:parents:join-path]/[node:field_channel:entity:name]/[node:source:title]'
+selection_criteria:
+  feb3d4f5-0997-4c09-a7c3-b0aea1e5b724:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: feb3d4f5-0997-4c09-a7c3-b0aea1e5b724
+selection_logic: and
+weight: -5
+relationships: {  }

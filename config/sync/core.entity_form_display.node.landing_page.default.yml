@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_channel
     - field.field.node.landing_page.field_meta_tags
     - field.field.node.landing_page.panelizer
     - node.type.landing_page
@@ -35,11 +36,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_channel:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_meta_tags:
     type: metatag_firehose
     region: content
     weight: 121
     settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   panelizer:
     type: panelizer
@@ -68,6 +82,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 2

@@ -1,0 +1,9 @@
+uuid: 6ba59f72-3994-4c02-9763-83269d3d1305
+langcode: en
+status: true
+dependencies: {  }
+name: channel
+vid: channel
+description: 'Paths for all nodes'
+hierarchy: 1
+weight: 0

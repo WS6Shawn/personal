@@ -1,0 +1,22 @@
+uuid: 6a8b0f47-a39b-4241-9aba-427f8c04ca62
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: channel_pattern
+label: 'Channel Pattern for Landing pages'
+type: 'canonical_entities:node'
+pattern: '[node:field_channel:entity:parents:join-path]/[node:field_channel:entity:name]'
+selection_criteria:
+  c5bb4278-eaae-4557-84e1-5d2c9e222e44:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c5bb4278-eaae-4557-84e1-5d2c9e222e44
+selection_logic: and
+weight: -5
+relationships: {  }

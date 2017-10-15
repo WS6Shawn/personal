@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "494c411992dd8815df59bebd5cc793e1",
+    "content-hash": "f7a3a1ecc64aa2fa61873cd097b7e4e1",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3535,6 +3535,70 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/metatag",
                 "issues": "http://drupal.org/project/issues/metatag"
+            }
+        },
+        {
+            "name": "drupal/neutral_paths",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/neutral_paths",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/neutral_paths-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "4cc287f506ed551a1b26d496eea77282442c8bf3"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/pathauto": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1493130544",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "akamaus",
+                    "homepage": "https://www.drupal.org/user/1100298"
+                },
+                {
+                    "name": "ao2",
+                    "homepage": "https://www.drupal.org/user/234884"
+                },
+                {
+                    "name": "bart.hanssens",
+                    "homepage": "https://www.drupal.org/user/699486"
+                },
+                {
+                    "name": "rmarques",
+                    "homepage": "https://www.drupal.org/user/757938"
+                },
+                {
+                    "name": "stefan.r",
+                    "homepage": "https://www.drupal.org/user/551886"
+                }
+            ],
+            "description": "Set newly created and updated path aliases as language neutral",
+            "homepage": "https://www.drupal.org/project/neutral_paths",
+            "support": {
+                "source": "http://cgit.drupalcode.org/neutral_paths"
             }
         },
         {

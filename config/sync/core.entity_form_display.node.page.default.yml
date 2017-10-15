@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_channel
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.panelizer
     - field.field.node.page.scheduled_update
     - node.type.page
   module:
@@ -35,11 +37,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_channel:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_meta_tags:
     type: metatag_firehose
     region: content
     weight: 122
     settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -89,6 +104,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 1
@@ -98,4 +118,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  panelizer: true
