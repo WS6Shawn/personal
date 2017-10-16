@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7a3a1ecc64aa2fa61873cd097b7e4e1",
+    "content-hash": "ffa3ce94efcbc6ad2473f1d041fc85aa",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -3126,6 +3126,69 @@
             "homepage": "https://www.drupal.org/project/jsonapi",
             "support": {
                 "source": "http://cgit.drupalcode.org/jsonapi"
+            }
+        },
+        {
+            "name": "drupal/lang_dropdown",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/lang_dropdown",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lang_dropdown-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "5b38fc4f090112f2e0360453faa782f3ed26749e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1488355386",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammed J. Razem",
+                    "homepage": "https://www.drupal.org/user/255384"
+                },
+                {
+                    "name": "RajabNatshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                },
+                {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                },
+                {
+                    "name": "kala4ek",
+                    "homepage": "https://www.drupal.org/user/1945174"
+                },
+                {
+                    "name": "manfer",
+                    "homepage": "https://www.drupal.org/user/506264"
+                }
+            ],
+            "description": "Provides a dropdown select to switch between available languages.",
+            "homepage": "https://www.drupal.org/project/lang_dropdown",
+            "support": {
+                "source": "http://cgit.drupalcode.org/lang_dropdown"
             }
         },
         {
@@ -10912,7 +10975,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/lang_dropdown": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
