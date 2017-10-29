@@ -6,6 +6,7 @@
 /docroot/modules/contrib
 /docroot/profiles/contrib
 /docroot/themes/contrib
+/docroot/themes/*/node_modules/
 
 # Ignore Composer-managed dependencies.
 vendor/
