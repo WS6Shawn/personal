@@ -14,8 +14,16 @@
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 
 //** Background color for `<body>`.
-$body-bg:               #eee;
+$body-bg:               #f1f1f1;
 //** Global text color on `<body>`.
 $text-color:            #000;
 
+$navbar-default-bg:  #234E76;
+//$navbar-default-bg:  #fff;
 
+
+$navbar-default-link-color: #FFF;
+$navbar-default-link-hover-color: lightgray;
+$navbar-default-link-hover-bg: inherit;
+$navbar-default-link-active-color: lightgray;
+$navbar-default-link-active-bg: inherit;

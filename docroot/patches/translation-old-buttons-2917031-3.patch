@@ -1,0 +1,17 @@
+diff --git a/core/modules/node/src/NodeTranslationHandler.php b/core/modules/node/src/NodeTranslationHandler.php
+index ead0d5d5fa..8b69645d1f 100644
+--- a/core/modules/node/src/NodeTranslationHandler.php
++++ b/core/modules/node/src/NodeTranslationHandler.php
+@@ -39,10 +39,8 @@ public function entityFormAlter(array &$form, FormStateInterface $form_state, En
+         }
+       }
+       if (isset($status_translatable)) {
+-        foreach (['publish', 'unpublish', 'submit'] as $button) {
+-          if (isset($form['actions'][$button])) {
+-            $form['actions'][$button]['#value'] .= ' ' . ($status_translatable ? t('(this translation)') : t('(all translations)'));
+-          }
++        if (isset($form['actions']['submit'])) {
++          $form['actions']['submit']['#value'] .= ' ' . ($status_translatable ? t('(this translation)') : t('(all translations)'));
+         }
+       }
+     }

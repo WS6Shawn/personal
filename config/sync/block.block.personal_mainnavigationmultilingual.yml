@@ -1,0 +1,24 @@
+uuid: 24089442-e08a-4347-8e9e-d5993227350f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main-navigation-multilingua
+  module:
+    - system
+  theme:
+    - personal
+id: personal_mainnavigationmultilingual
+theme: personal
+region: navigation
+weight: -4
+provider: null
+plugin: 'system_menu_block:main-navigation-multilingua'
+settings:
+  id: 'system_menu_block:main-navigation-multilingua'
+  label: 'Main navigation multilingual'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

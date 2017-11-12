@@ -1,0 +1,22 @@
+uuid: c142d304-377c-4087-9ab9-cc93c6633c44
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - personal
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: personal_help
+theme: personal
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

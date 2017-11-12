@@ -1,0 +1,20 @@
+uuid: b70d1b8d-648b-4054-b481-f417e6fcbb46
+langcode: en
+status: false
+dependencies:
+  module:
+    - language
+  theme:
+    - personal
+id: personal_languageswitcher
+theme: personal
+region: header
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }
