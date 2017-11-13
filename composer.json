@@ -30,7 +30,8 @@
         "drupal/lang_dropdown": "^2.0@beta",
         "drupal/menu_link_attributes": "^1.0",
         "drupal/bootstrap": "^3.6",
-        "drupal/paragraphs": "^1.2"
+        "drupal/paragraphs": "^1.2",
+        "drupal/linkit": "^4.3"
     },
     "repositories": [
         {
