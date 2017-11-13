@@ -43,3 +43,15 @@ If you specify a branch, such as 1.x you must add -dev to the end of the version
 If you peek at the ```.gitignore``` we provide, you'll see that certain directories, including all directories containing contributed projects, are excluded from source control. This might be a bit disconcerting if you're newly arrived from Planet Drush, but in a Composer-based project like this one, **you SHOULD NOT commit your installed dependencies to source control**.
 
 When you set up the project, Composer will create a file called ```composer.lock```, which is a list of which dependencies were installed, and in which versions. **Commit ```composer.lock``` to source control!** Then, when your colleagues want to spin up their own copies of the project, all they'll have to do is run ```composer install```, which will install the correct versions of everything in ```composer.lock```.
+
+
+*******
+
+Compiling SASS:
+
+gulp init (Creates the initial css file) gulp watch (Watches the sass folder for changes)
+
+Adding Browsersync to workflow
+
+Edit the proxy address in the gulpfile.js file to match the IP or hostname of your Drupal website.
+Run gulp browsersync (Watches the sass folder, and sets up a browsersync session.)

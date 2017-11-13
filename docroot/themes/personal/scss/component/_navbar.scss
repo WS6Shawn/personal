@@ -23,7 +23,8 @@ body {
   }
 
   @media #{$tablet} {
-    margin-top: ($grid-gutter-width / 2);
+    //margin-top: ($grid-gutter-width / 2);
+    margin-top: 0;
   }
   @media #{$mobile} {
     &.toolbar-vertical {

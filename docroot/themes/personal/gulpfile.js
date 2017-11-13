@@ -1,3 +1,6 @@
+// Reference: https://github.com/mikebrew/bootstrap_sass_drupal
+// Reference: https://www.drupal.org/docs/8/theming/creating-automation-tools-for-custom-themes-gulpjs
+
 var gulp = require('gulp'),
     gulpIf = require('gulp-if'),
     eslint = require('gulp-eslint'),
@@ -137,25 +140,73 @@ var sassOptions = {
 };
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
-    injectChanges: true,
-    browserSync.init({
-        proxy: {
-            target: "http://personal",
-        }   
-    });
+// gulp.task('serve', ['sass'], function() {
+//     injectChanges: true,
+//     browserSync.init({
+//         proxy: {
+//             target: "http://personal",
+//         }   
+//     });
 
-    gulp.watch("./scss/*.scss", ['sass']).on('change', browserSync.reload);
-    gulp.watch("./**/*.html.twig").on('change', browserSync.reload);
+//     gulp.watch("./scss/*.scss", ['sass']).on('change', browserSync.reload);
+//     gulp.watch("./scss/component/*.scss", ['sass']).on('change', browserSync.reload);
+//     gulp.watch("./**/*.html.twig").on('change', browserSync.reload);
 
-});
+// });
 
 // Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src('./scss/**/*.scss')
-        .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(gulp.dest("./css"))
-        .pipe(browserSync.stream());//ensure .stream is called after gulp.dest
-});
+// gulp.task('sass', function() {
+//     return gulp.src('./scss/**/*.scss')
+//         .pipe(sass(sassOptions).on('error', sass.logError))
+//         .pipe(gulp.dest("./css"))
+//         .pipe(browserSync.stream());
+// });
 
-gulp.task('default', ['serve']);
+// gulp.task('default', ['serve']);
+
+
+gulp.task('init', function () {
+    'use strict';
+    gulp.src('scss/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+  });
+
+// Watch task //
+gulp.task('watch', function () {
+    'use strict';
+    gulp.watch('scss/**/*.scss', ['init']);
+  });
+
+
+// Add Support for Browsersync + watching scss/html files //
+gulp.task('browsersync', ['sass'], function () {
+    'use strict';
+    browserSync.init({
+      proxy: "http://personal",
+      reloadDelay: 1000
+    });
+
+  // gulp.task('fonts', function() {
+  //     return gulp.src([
+  //                     'node_modules/bootstrap-sass/assets/fonts/bootstrap/*.*'])
+  //             .pipe(gulp.dest('fonts/'));
+  // });
+
+    gulp.watch("scss/**/*.scss", ['sass']).on('change', browserSync.reload);
+  });
+
+// Compile sass into CSS & auto-inject into browsers //
+gulp.task('sass', function () {
+    'use strict';
+    return gulp.src("scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("./css"))
+        .pipe(browserSync.stream());
+  });
+
+//gulp.task('default', ['sass', 'fonts'], function () {
+gulp.task('default', ['sass'], function () {
+    gulp.watch('scss/**/*.scss', ['init']);
+  });
+
