@@ -45,22 +45,26 @@ If you peek at the ```.gitignore``` we provide, you'll see that certain director
 When you set up the project, Composer will create a file called ```composer.lock```, which is a list of which dependencies were installed, and in which versions. **Commit ```composer.lock``` to source control!** Then, when your colleagues want to spin up their own copies of the project, all they'll have to do is run ```composer install```, which will install the correct versions of everything in ```composer.lock```.
 
 
-*******
+```
 
 ## Compiling SASS
 
-gulp init (Creates the initial css file) 
-gulp watch (Watches the sass folder for changes)
+    $ gulp init (Creates the initial css file)
+
+    $ gulp watch (Watches the sass folder for changes)
 
 Adding Browsersync to workflow:
 
 Edit the proxy address in the gulpfile.js file to match the IP or hostname of your Drupal website.
-Run gulp browsersync (Watches the sass folder, and sets up a browsersync session.)
+
+Run: 
+    $ gulp browsersync (Watches the sass folder, and sets up a browsersync session.)
 
 
-*******
+```
 
 ## Making SQL Backups
 
-cd docroot
-drush sql-dump --result-file=../db-backups/date-goes-here.sql
+    $ cd docroot
+
+    $ drush sql-dump --result-file=../db-backups/date-goes-here.sql
