@@ -47,7 +47,7 @@ When you set up the project, Composer will create a file called ```composer.lock
 
 *******
 
-## Compiling SASS:
+## Compiling SASS
 
 gulp init (Creates the initial css file) 
 gulp watch (Watches the sass folder for changes)
@@ -56,3 +56,11 @@ Adding Browsersync to workflow:
 
 Edit the proxy address in the gulpfile.js file to match the IP or hostname of your Drupal website.
 Run gulp browsersync (Watches the sass folder, and sets up a browsersync session.)
+
+
+*******
+
+## Making SQL Backups
+
+cd docroot
+drush sql-dump --result-file=../db-backups/date-goes-here.sql

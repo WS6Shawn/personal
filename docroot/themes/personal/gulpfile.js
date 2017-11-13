@@ -1,5 +1,6 @@
 // Reference: https://github.com/mikebrew/bootstrap_sass_drupal
 // Reference: https://www.drupal.org/docs/8/theming/creating-automation-tools-for-custom-themes-gulpjs
+// Reference: https://browsersync.io/docs/gulp
 
 var gulp = require('gulp'),
     gulpIf = require('gulp-if'),
