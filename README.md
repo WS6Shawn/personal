@@ -58,3 +58,9 @@ Edit the proxy address in the gulpfile.js file to match the IP or hostname of yo
 
     $ drush sql-dump --result-file=../db-backups/date-goes-here.sql
 ```
+
+## Notes
+The directory option was used to apply a core patch locally since ```git apply path.patch``` expects the patch to be executed from the directory with .git. However, the patch is also included in composer.json. 
+```
+	$ git apply -v --directory=docroot docroot/patches/translation-old-buttons-11192017.patch
+```
