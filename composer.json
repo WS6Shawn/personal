@@ -20,18 +20,19 @@
         "drush/drush": "^9.0"
     },
     "require": {
-        "acquia/lightning": "~2.2.0",
+        "acquia/lightning": "2.2.8",
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "drupal/console": "^1.0",
-        "drupal/core": "~8.4.0",
+        "drupal/core": "~8.4.4",
         "drupal/admin_toolbar": "^1.20",
         "drupal/neutral_paths": "^1.1",
         "drupal/lang_dropdown": "^2.0@beta",
         "drupal/menu_link_attributes": "^1.0",
         "drupal/bootstrap": "^3.6",
         "drupal/paragraphs": "^1.2",
-        "drupal/linkit": "^4.3"
+        "drupal/linkit": "^4.3",
+        "drupal/lightning": "2.2.0"
     },
     "repositories": [
         {
