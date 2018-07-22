@@ -13,7 +13,7 @@ _core:
 id: personal_main_menu
 theme: personal
 region: navigation
-weight: -1
+weight: -3
 provider: null
 plugin: 'system_menu_block:main'
 settings:
