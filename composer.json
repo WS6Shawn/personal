@@ -32,7 +32,8 @@
         "drupal/bootstrap": "^3.6",
         "drupal/paragraphs": "^1.2",
         "drupal/linkit": "^4.3",
-        "drupal/lightning": "2.2.0"
+        "drupal/lightning": "2.2.0",
+        "drupal/wbm2cm": "^2.0@beta"
     },
     "repositories": [
         {
