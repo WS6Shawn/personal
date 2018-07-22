@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.field_channel
     - field.field.node.page.field_meta_tags
     - field.field.node.page.panelizer
-    - field.field.node.page.scheduled_update
     - node.type.page
   module:
     - metatag
@@ -26,6 +25,9 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     region: content
   field_channel:
     weight: 3
@@ -53,4 +55,3 @@ content:
 hidden:
   langcode: true
   panelizer: true
-  scheduled_update: true
