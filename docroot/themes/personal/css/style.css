@@ -6385,4 +6385,5 @@ p:last-child,
   width: 148px; }
 
 .banner {
-  float: right; }
+  float: right;
+  margin: 5px 0 5px 0; }
