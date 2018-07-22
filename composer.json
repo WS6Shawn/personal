@@ -33,7 +33,8 @@
         "drupal/paragraphs": "^1.2",
         "drupal/linkit": "^4.3",
         "drupal/lightning": "2.2.0",
-        "drupal/wbm2cm": "^2.0@beta"
+        "drupal/wbm2cm": "^2.0@beta",
+        "drupal/module_missing_message_fixer": "^1.0@alpha"
     },
     "repositories": [
         {

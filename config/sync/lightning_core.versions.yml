@@ -102,3 +102,4 @@ pathauto: 0.0.0
 content_translation: 0.0.0
 views: 0.0.0
 paragraphs: 0.0.0
+module_missing_message_fixer: 1.0.0-alpha3
