@@ -9,7 +9,7 @@ dependencies:
 id: personal_languagedropdownswitcher
 theme: personal
 region: header
-weight: -5
+weight: -6
 provider: null
 plugin: 'language_dropdown_block:language_interface'
 settings:

@@ -5,10 +5,9 @@ dependencies:
   config:
     - field.field.media.instagram.embed_code
     - field.field.media.instagram.field_media_in_library
-    - media_entity.bundle.instagram
+    - media.type.instagram
   module:
     - path
-    - workbench_moderation
 _core:
   default_config_hash: 3iEda9a4O9kdUm0srWixIp38YeSTbmYgKoaq143S34c
 id: media.instagram.default
@@ -55,6 +54,13 @@ content:
   preview:
     weight: 0
     region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
 hidden:
   created: true
   uid: true

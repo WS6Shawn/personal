@@ -13,7 +13,6 @@ dependencies:
     - panelizer
     - path
     - text
-    - workbench_moderation
 _core:
   default_config_hash: 5DlOHPfH8E6ZZ7WhXlP2xiw6EkenSVyDFQVdcOFXJpE
 id: node.landing_page.default
