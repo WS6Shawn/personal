@@ -1,4 +1,4 @@
-uuid: 457324bb-15f1-4744-989a-6a7d40951f10
+uuid: dcf18ea6-5e46-4e2c-b7c0-901f879819d0
 langcode: en
 status: true
 dependencies:
@@ -14,7 +14,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: default
-  handler_settings: {  }
-field_type: entity_reference
+settings: {  }
+field_type: string
