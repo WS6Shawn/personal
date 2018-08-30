@@ -20,7 +20,7 @@
         "drush/drush": "^9.0"
     },
     "require": {
-        "acquia/lightning": "3.2.0-beta1",
+        "acquia/lightning": "~3.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "drupal/console": "^1.0",
